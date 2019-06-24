@@ -2,14 +2,20 @@
 FROM jenkins/jenkins:latest
 
 #just info about who created this
-MAINTAINER Simone Rodigari (simone.rodigari@gmail.com)
+LABEL Simone Rodigari (simone.rodigari@gmail.com)
 
 #get rid of admin password setup
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
 USER root
 
-# #enable docker
+# install nodejs
+RUN apt-get install -y curl \
+  && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
+  && apt-get install -y nodejs \
+  && curl -L https://www.npmjs.com/install.sh | sh
+
+# install docker
 RUN apt-get update && \
     apt-get -y install apt-transport-https \
         ca-certificates \

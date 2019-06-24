@@ -1,2 +1,17 @@
 git
 nodejs
+pipeline-build-step
+pipeline-graph-analysis
+pipeline-input-step
+pipeline-milestone-step
+pipeline-model-api
+pipeline-model-declarative-agent
+pipeline-model-definition
+pipeline-githubnotify-step
+pipeline-github-lib
+pipeline-rest-api
+pipeline-stage-step
+pipeline-stage-tags-metadata
+pipeline-stage-view
+pipeline-utility-steps
+plain-credentials

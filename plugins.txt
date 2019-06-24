@@ -1,5 +1,5 @@
 git
-github-integration
+github-pullrequest
 authorize-project
 matrix-auth
 embeddable-build-status

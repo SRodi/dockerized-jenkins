@@ -8,13 +8,22 @@
 
 #### Jenkins plugins:
 - git
-- nodejs
+- github-integration
+- authorize-project
+- matrix-auth
+- embeddable-build-status
 - pipeline 
 
-### Build docker image
+### Run docker from latest image on DockerHub
 
-`docker build . -t jenkins-java-img`
+```
+docker run -ti --name dockerized-jenkins -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 srodi/jenkins:latest
+```
 
-### Run docker
+### Build local docker image
 
-`docker run -ti --name test-groovy -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 jenkins-java-img`
+`docker build . -t dockerized-jenkins-img`
+
+### Run docker from local image
+
+`docker run -ti --name dockerized-jenkins -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 dockerized-jenkins-img`

@@ -2,6 +2,10 @@
 - NodeJs 
 - Docker (single docker deamon on host machine) 
 
+#### Jenkins Global Tools:
+- jdk7
+- jdk8
+
 #### Jenkins plugins:
 - git
 - nodejs

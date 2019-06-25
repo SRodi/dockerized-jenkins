@@ -1,3 +1,4 @@
+[![Build Status](http://159.65.143.184:8080/buildStatus/icon?job=dockerized-jenkins-pipeline&build=1)](http://159.65.143.184:8080/job/dockerized-jenkins-pipeline/1/)
 #### Dockerized Jenkins with pre-installed:
 - NodeJs 
 - Docker (single docker deamon on host machine) 

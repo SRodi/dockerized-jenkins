@@ -2,6 +2,12 @@
 - NodeJs 
 - Docker (single docker deamon on host machine) 
 
+#### Jenkins configuration:
+- user authentication setup on first lauch
+- authorize project
+- matrix-based-authentication
+- CSRF protection
+
 #### Jenkins Global Tools:
 - jdk7
 - jdk8
@@ -14,7 +20,7 @@
 - embeddable-build-status
 - pipeline 
 
-### Run docker from latest image on DockerHub
+### Run docker from latest srodi/jenkins image on DockerHub
 
 ```
 docker run -ti --name dockerized-jenkins -v /var/run/docker.sock:/var/run/docker.sock -p 8080:8080 srodi/jenkins:latest

@@ -9,6 +9,9 @@ ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
 USER root
 
+# install maven
+RUN apt-get update && apt-get install -y maven
+
 # install nodejs
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
@@ -16,8 +19,7 @@ RUN apt-get install -y curl \
   && curl -L https://www.npmjs.com/install.sh | sh
 
 # install docker
-RUN apt-get update && \
-    apt-get -y install apt-transport-https \
+RUN apt-get -y install apt-transport-https \
         ca-certificates \
         curl \
         gnupg2 \

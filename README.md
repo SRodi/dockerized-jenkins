@@ -1,6 +1,7 @@
 [![Build Status](http://159.65.143.184:8080/buildStatus/icon?job=dockerized-jenkins)](http://159.65.143.184:8080/job/dockerized-jenkins/)
 #### Dockerized Jenkins with pre-installed:
-- NodeJs 
+- NodeJs
+- Maven
 - Docker (single docker deamon on host machine) 
 
 #### Jenkins configuration:

@@ -1,4 +1,4 @@
-[![Build Status](http://159.65.143.184:8080/buildStatus/icon?job=dockerized-jenkins)](http://159.65.143.184:8080/job/dockerized-jenkins/) ![NPM](https://img.shields.io/npm/l/react.svg)
+[![Build Status](http://188.166.67.88:8080/buildStatus/icon?job=dockerized-jenkins)](http://188.166.67.88:8080/job/dockerized-jenkins/)![NPM](https://img.shields.io/npm/l/react.svg)
 #### Dockerized Jenkins with pre-installed:
 - NodeJs
 - Maven
